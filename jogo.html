@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jogo_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="jogo.js"></script>
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav">
+                <ul class="btn_header">
+                    <li>
+                        <form style="display: inline" action="jogo.html" method="get">
+                            <button class="reiniciar_btn">Reiniciar</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form style="display: inline" action="inicio.html" method="get">
+                            <button class="entrar_btn">Entrar</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="current-player" class="current-player">gsdfh</div>
+    <div class="tab">
+        <div class="game">
+            <div class="area" data-cell>
+                <div class="peca"></div>
+            </div>
+            <div class="area" data-cell>
+                <div class="peca" data-i="1"></div>
+            </div>
+            <div class="area" data-cell>
+                <div class="peca" data-i="2"></div>
+            </div>
+            <div class="area" data-cell>
+                <div class="peca" data-i="3"></div>
+            </div>
+            <div class="area" data-cell>
+                <div class="peca" data-i="4"></div>
+            </div>
+            <div class="area" data-cell>
+                <div class="peca" data-i="5"></div>
+            </div>
+            <div class="area" data-cell>
+                <div class="peca" data-i="6"></div>
+            </div>
+            <div class="area" data-cell>
+                <div class="peca" data-i="7"></div>
+            </div>
+            <div class="area" data-cell>
+                <div class="peca" data-i="8"></div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="message" data-message>
+        <p> X Venceu!</p>
+        <button>Reiniciar</button>-->
+    </div>
+    <script type="text/javascript" src="jogo.js"></script>
+</body>
+
+</html>
