@@ -24,7 +24,6 @@ initialize = function () {
     setUi();
 }
 
-
 update = function () {
     if (winner()) {
 
