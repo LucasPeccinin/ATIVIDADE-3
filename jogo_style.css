@@ -14,9 +14,10 @@
     font-family: 'Press Start 2P', cursive;
 }
 
+/* CABEÇALHO */
 .nav button {
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
     padding: .5rem 2rem;
 }
 
@@ -30,31 +31,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 5rem;
-}
-
-.header a {
-    margin: 1rem;
-}
-
-.header img {
-    width: 4.5rem;
-    height: 4.5rem;
-}
-
-.header ul {
-    display: flex;
-    gap: 4rem;
-}
-
-.header li {
-    color: var(--cor-texto);
-    list-style: none;
+    height: 4rem;
 }
 
 .header button {
     height: 2.5rem;
-    width: 15rem;
+    width: 13rem;
     border-radius: 2rem;
     font-family: 'Press Start 2P', cursive;
     color: black;
@@ -62,12 +44,58 @@
     cursor: pointer;
 }
 
-.current-player {
+/* INPUTS */
+h1 {
+    margin: 1%;
+    color: var(--cor_primaria);
+    font-size: 21px;
     text-align: center;
-    margin-top: 0.5rem;
-}
+  }
+  
+  .nomes {
+    position: static;
+    text-align: center;
+    background-color: #ffff;
+    margin: 0.5rem;
+    width: 100%;
+  }
+  
+  label {
+    font-size: 1rem;
+    color: var(--cor-primaria);
+  }
+  
+  input {
+    border-radius: 2rem;
+    height: 2.5rem;
+    width: 11rem;
+    text-align: center;
+    border-color: rgba(0, 0, 0, 0.49);
+  }
+
+  .submit {
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  .jogar_btn {
+    height: 2rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    background-color: var(--cor-primaria);
+    font-family: 'Press Start 2P', cursive;
+    color: #ffff;
+    border-color: rgba(0, 0, 0, 0.49);
+    cursor: pointer;
+  }
 
 /* TABULEIRO */
+
+.current-player {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
 .tab {
     justify-content: center;
     align-content: center;
@@ -84,7 +112,8 @@
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(3, auto);
-    margin-top:6rem;
+    margin-top:2rem;
+    margin-bottom: 4rem;
 }
 
 .area {
@@ -132,8 +161,4 @@
 
 .peca:hover {
     border: 1px solid red;
-}
-/* MENSAGEM */
-.message {
-    display: none;
 }

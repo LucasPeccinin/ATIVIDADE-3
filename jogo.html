@@ -9,29 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="jogo.js"></script>
     <title>Jogo da Velha</title>
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
             <nav class="nav">
-                <ul class="btn_header">
-                    <li>
-                        <form style="display: inline" action="jogo.html" method="get">
-                            <button class="reiniciar_btn">Reiniciar</button>
-                        </form>
-                    </li>
-                    <li>
-                        <form style="display: inline" action="inicio.html" method="get">
-                            <button class="entrar_btn">Entrar</button>
-                        </form>
-                    </li>
-                </ul>
+                <form style="display: inline">
+                    <button class="reiniciar_btn" onclick="return resetGame()">Reiniciar</button>
+                </form>
             </nav>
         </header>
     </div>
-    <div id="current-player" class="current-player">gsdfh</div>
+    <h1>Bem-vindo ao Jogo da Velha!</h1>
+    <div class="nomes">
+        <form name="myForm" action="" onsubmit="return startGame()">
+            <label>Nome Jogador X</label><br />
+            <input class="submit" id="usuario_x" type="text" maxlength="10"/><br /><br />
+
+            <label>Nome Jogador O</label><br />
+            <input class="submit" id="usuario_o" type="text" maxlength="10"/><br /><br /><br />
+
+            <form style="display: inline" type="submit">
+                <button class="jogar_btn">Jogar!</button>
+            </form>
+        </form>
+    </div>
+    <div id="current-player" class="current-player"></div>
     <div class="tab">
         <div class="game">
             <div class="area" data-cell>
@@ -62,10 +67,6 @@
                 <div class="peca" data-i="8"></div>
             </div>
         </div>
-    </div>
-    <!--<div class="message" data-message>
-        <p> X Venceu!</p>
-        <button>Reiniciar</button>-->
     </div>
     <script type="text/javascript" src="jogo.js"></script>
 </body>
